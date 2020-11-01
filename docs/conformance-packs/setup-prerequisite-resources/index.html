@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="Hands on labs for those interested in risk &amp; assurance, and compliance.">
+<meta name="author" content="Paul Curtis">
+    <link rel="icon" href="/risk-lab-site/images/favicon.png" type="image/png">
+    <title>Setup Prerequisite Resources :: Risk &amp; Compliance Labs</title>
+
+    
+    <link href="/risk-lab-site/css/nucleus.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/fontawesome-all.min.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/hybrid.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/featherlight.min.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/perfect-scrollbar.min.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/auto-complete.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/atom-one-dark-reasonable.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/theme.css?1597819888" rel="stylesheet">
+    <link href="/risk-lab-site/css/hugo-theme.css?1597819888" rel="stylesheet">
+    
+    <link href="/risk-lab-site/css/theme-labs.css?1597819888" rel="stylesheet">
+    
+    
+
+    <script src="/risk-lab-site/js/jquery-3.3.1.min.js?1597819888"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/risk-lab-site/conformance-packs/setup-prerequisite-resources/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://paulJRCurtis.github.io/risk-lab-site/">
+  <img src="/risk-lab-site/images/AWS_AWS_logo_RGB_REV.png" alt="AWS">
+</a>
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/risk-lab-site/start-workshop/" title="Start the Workshop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/risk-lab-site/start-workshop/">
+          <b></b>Start the Workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/risk-lab-site/start-workshop/on-your-own/" title="On your own" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/risk-lab-site/start-workshop/on-your-own/">
+          <b></b>On your own
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/start-workshop/on-your-own/create-an-aws-account/" title="Create an AWS Account" class="dd-item ">
+        <a href="/risk-lab-site/start-workshop/on-your-own/create-an-aws-account/">
+        <b></b>Create an AWS Account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/risk-lab-site/start-workshop/at-an-aws-event/" title="At an AWS Event" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/risk-lab-site/start-workshop/at-an-aws-event/">
+          <b></b>At an AWS Event
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/start-workshop/at-an-aws-event/aws-workshop-portal/" title="AWS Workshop Portal" class="dd-item ">
+        <a href="/risk-lab-site/start-workshop/at-an-aws-event/aws-workshop-portal/">
+        <b></b>AWS Workshop Portal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/risk-lab-site/conformance-packs/" title="Conformance Packs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/risk-lab-site/conformance-packs/">
+          <b></b>Conformance Packs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/introduction/" title="Introduction" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/introduction/">
+        <b>1. </b>Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/setup-prerequisite-resources/" title="Setup Prerequisite Resources" class="dd-item active">
+        <a href="/risk-lab-site/conformance-packs/setup-prerequisite-resources/">
+        <b>2. </b>Setup Prerequisite Resources
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/enable-aws-config/" title="Enable AWS Config" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/enable-aws-config/">
+        <b>3. </b>Enable AWS Config
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/deploy-conformance-pack/" title="Deploy Conformance Pack" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/deploy-conformance-pack/">
+        <b>4. </b>Deploy Conformance Pack
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/view-compliance-and-remediation/" title="View Compliance and Remediation" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/view-compliance-and-remediation/">
+        <b>5. </b>View Compliance and Remediation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/clean-up/" title="Clean-up" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/clean-up/">
+        <b>6. </b>Clean-up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/conformance-packs/learn-more/" title="Learn More" class="dd-item ">
+        <a href="/risk-lab-site/conformance-packs/learn-more/">
+        <b>7. </b>Learn More
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/risk-lab-site/pipeline-controls-intro/" title="Pipeline Controls Intro" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/risk-lab-site/pipeline-controls-intro/">
+          <b> </b>Pipeline Controls Intro
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/get-source-files/" title="Get Source Files" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/get-source-files/">
+        <b>1. </b>Get Source Files
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/create-repo-bucket/" title="Create Repo Bucket" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/create-repo-bucket/">
+        <b>2. </b>Create Repo Bucket
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/create-environments/" title="Create Environments" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/create-environments/">
+        <b>3. </b>Create Environments
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/create-pipeline/" title="Create a Pipeline" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/create-pipeline/">
+        <b>4. </b>Create a Pipeline
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/check-cf/" title="Check CloudFormation" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/check-cf/">
+        <b>5. </b>Check CloudFormation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/review-codepipeline/" title="Review Code Pipeline" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/review-codepipeline/">
+        <b>6. </b>Review Code Pipeline
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/deploy-first-change/" title="Deploy First Change" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/deploy-first-change/">
+        <b>7. </b>Deploy First Change
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/edit-change/" title="Edit Change &amp; Redeploy" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/edit-change/">
+        <b>8 </b>Edit Change &amp; Redeploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/review-sg/" title="Review Security Group" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/review-sg/">
+        <b>9. </b>Review Security Group
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/risk-lab-site/pipeline-controls-intro/clean-up/" title="Clean Up" class="dd-item ">
+        <a href="/risk-lab-site/pipeline-controls-intro/clean-up/">
+        <b>10. </b>Clean Up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+    </section>
+  </div>
+</nav>
+
+
+
+    <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+              
+
+<div id="top-bar">
+  
+  
+  <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span id="sidebar-toggle-span">
+      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+    
+    <span class="links">
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+<a href='/risk-lab-site/'>Risk & Compliance Labs</a> > <a href='/risk-lab-site/conformance-packs/'>Conformance Packs</a> > Setup Prerequisite Resources
+
+
+
+
+
+
+      
+    </span>
+  </div>
+  
+</div>
+        
+        <div id="head-tags">
+          
+<div class="tags">
+
+  <a class="tag-link" href="/risk-lab-site/tags/beginner">Beginner</a>
+
+</div>
+
+        </div>
+        
+          <div id="body-inner">
+            
+            <h1>
+              
+              Setup Prerequisite Resources
+            </h1>
+            
+            <p>We will create prerequisite resources required for “Amazon S3 Operational Best Practices with Remediation Actions” conformance pack. This includes service linked role for Conformance Packs, Remediation action automation assume role and S3 Service Side logging bucket.</p>
+<p><strong>1. Download required templates template</strong></p>
+<p>The files we&rsquo;ll be using are available on github <a href="https://github.com/paulJRCurtis/Risk-Labs" target="_blank">Risk-Labs</a>. For this lab we&rsquo;ll be using the files in the conformance-packs directory, There are three files but you can disregard the <span style="display: inline; font-family:courier;">README.md</span> file.</p>
+<p>The two files we&rsquo;ll be using are;</p>
+<ul>
+<li><span style="display: inline; font-family:courier;">prerequisite-resources.yaml</span><br>
+This is the CloudFormation script to create the resources that we will need to run the conformance pack.</li>
+<li><span style="display: inline; font-family:courier;">s3-best-practices-with-remediation-pack.yaml</span><br>
+This is the script that contains the AWS Config rules and the remediation scripts.</li>
+</ul>
+<p><img src="/risk-lab-site/images/conformance-packs/git-code-repo.png" alt="Github Code Repo"></p>
+<p>If you have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">git</a> installed you can simply clone the repository, otherwise you can download a zip file containing the files by clicking <span style="display: inline; font-weight: bold; padding: 5px 15px; color:white; border-style: solid; border-width: 1px; background-color: green">Code</span> and then unzip the file into a local working directory.  Either way the risk labs code repository is on <a href="https://github.com/paulJRCurtis/Risk-Labs" target="_blank">Github repo</a>.</p>
+<p><strong>2. Login to your AWS Account</strong>
+If you haven&rsquo;t already logon to your AWS account</p>
+<p><img src="/risk-lab-site/images/conformance-packs/console.png" alt="AWS Management Console"></p>
+<p><strong>3. Go CloudFormation</strong><br>
+Take the time (3:01) to watch the short video describing CloudFormation.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Omppm_YUG2g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>From the AWS Management Console, select Services in the top left and select CloudFormation under Management and Governance.</p>
+<p><img src="/risk-lab-site/images/conformance-packs/cfn-console.png" alt="AWS Management Console"></p>
+<p>Click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:#232F3E; border-style: solid; border-width: 1px; background-color: White">Create stack</span>.</p>
+<p>Under <strong>Prerequisite - prepare template</strong>, ensure &ldquo;Template is ready&rdquo; is selected.</p>
+<p>Under <strong>Specify template</strong>, select <strong>Upload a template file</strong> and click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:#232F3E; border-style: solid; border-width: 1px; background-color: White">Choose file</span> button.<br>
+Select the CloudFormation template <span style="display: inline; font-family:courier;">prerequisite-resources.yaml</span> downloaded in Step 1.<br>
+Click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:white; border-style: solid; border-width: 1px; background-color: #E3661B">Next</span></p>
+<p><img src="/risk-lab-site/images/conformance-packs/cfn-create-stack.png" alt="CloudFormation Create Stack"></p>
+<p><strong>4. Enter a Stack name</strong><br>
+Something like &ldquo;conformance-lab-prerequisites&rdquo; makes sense but it can be whatever you like.<br>
+Click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:white; border-style: solid; border-width: 1px; background-color: #E3661B">Next</span></p>
+<p><strong>5. Configure stack options</strong><br>
+Leave all defaults on the Configure stack options page and click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:white; border-style: solid; border-width: 1px; background-color: #E3661B">Next</span></p>
+<p><strong>6. Review stack</strong>
+In the Capabilities section at the bottom of the page, check the check box I acknowledge that AWS CloudFormation might create IAM resources with custom names.</p>
+<p><img src="/risk-lab-site/images/conformance-packs/cfn-acknowledge.png" alt="CloudFormation Acknowledge">
+Click <span style="display: inline; font-weight: bold; padding: 5px 15px; color:white; border-style: solid; border-width: 1px; background-color: #E3661B">Create stack</span></p>
+<p><strong>7. Stack creation complete</strong><br>
+Once the deployment of the stack has completed you will see 
+<span style="display: inline; font-weight: bold; color: green">CREATE_COMPLETE</span> on the left-hand side under <strong>Stacks</strong>.  Take some time to explore the tabs, particularly the <strong>Events</strong> and <em>Resources</em> tabs.
+<img src="/risk-lab-site/images/conformance-packs/cfn-resources.png" alt="CloudFormation resources"></p>
+
+            
+        </div> 
+             
+      
+      </div>
+              <div id="navigation">
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <a class="nav nav-prev" href="/risk-lab-site/conformance-packs/introduction/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+        <a class="nav nav-next" href="/risk-lab-site/conformance-packs/enable-aws-config/" title="Enable AWS Config" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+        
+      </div>
+    </section>
+    <footer class="footline">
+      <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>
+<script src="/risk-lab-site/js/clipboard.min.js?1597819888"></script>
+<script src="/risk-lab-site/js/perfect-scrollbar.min.js?1597819888"></script>
+<script src="/risk-lab-site/js/perfect-scrollbar.jquery.min.js?1597819888"></script>
+<script src="/risk-lab-site/js/jquery.sticky.js?1597819888"></script>
+<script src="/risk-lab-site/js/featherlight.min.js?1597819888"></script>
+<script src="/risk-lab-site/js/highlight.pack.js?1597819888"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/risk-lab-site/js/modernizr.custom-3.6.0.js?1597819888"></script>
+<script src="/risk-lab-site/js/learn.js?1597819888"></script>
+<script src="/risk-lab-site/js/hugo-learn.js?1597819888"></script>
+<link href="/risk-lab-site/mermaid/mermaid.css?1597819888" rel="stylesheet" />
+<script src="/risk-lab-site/mermaid/mermaid.js?1597819888"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
+      
+    </footer>
+  </body>
+</html>

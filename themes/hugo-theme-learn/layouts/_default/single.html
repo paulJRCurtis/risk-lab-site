@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language | default "en" }}" class="js csstransforms3d">
+  <head>
+    {{ partial "header.html" . }}
+    {{ partial "custom-header.html" . }}
+  </head>
+  <body class="" data-url="{{ .RelPermalink }}">
+    {{ partial "menu.html" . }}
+
+    <section id="body">
+      <div class="padding highlightable">
+        {{if not .IsHome}}
+          {{ partial "top-bar.html" . }}
+        {{ end }}
+        <div id="head-tags">
+          {{ partial "tags.html" . }}
+        </div>
+
+        {{ if .Params.chapter }}
+          <div id="chapter">
+        {{ end }}
+
+        <div id="body-inner">
+                      <h1>
+              {{ if eq .Kind "taxonomyTerm" }}
+              {{.Kind}} ::
+              {{ end }}
+              {{.Title}}
+            </h1>
+      
+          
+          {{ .Content }}
+
+        </div> <!-- end body-inner --> 
+
+        {{ if .Params.chapter }}
+          </div> <!-- end chapter-->
+        {{ end }}
+          
+      {{ partial "custom-comments.html" . }}     
+      
+      {{with .Params.LastModifierDisplayName}}
+      <i class='fas fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fas fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
+      {{end}}
+
+      </div>
+        {{ partial "navigation.html" . }}
+    </section>
+    <footer class="footline">
+      {{ partial "footer.html" . }}
+      {{ partial "custom-footer.html" . }}
+    </footer>
+  </body>
+</html>
