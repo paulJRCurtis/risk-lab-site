@@ -26,7 +26,7 @@ LastModifierEmail = ""
 +++
 
 #### 1. Select Config Rules ####
-At the time this lab was being created there were 150 [AWS Managed Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) to choose from but the number is growing.
+At the time this lab was being created there were 150 [AWS Managed Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) to choose from, and the number is growing.
 
 In this introductory lab we will use three AWS Managed Config Rules that relate to S3. Recall that we created an S3 bucket already as part of the AWS Config setup to provide config a place to store configuration history and configuration snapshots.
 

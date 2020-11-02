@@ -1,7 +1,7 @@
 +++
 title = "Accessing AWS Compliance Reports"
 date = 2020-08-23T15:17:40+10:00
-draft = false
+draft = true
 
 tags = ["Security of the Cloud","Artifact"]
 categories = ["Beginner"]

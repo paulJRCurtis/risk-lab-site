@@ -1,16 +1,16 @@
 +++
-title = "Preventative controls with Code Pipeline"
-date = 2020-08-01T15:28:32+10:00
-draft = true
+title = "Create Patch Manager configuration"
+date = 2020-08-23T15:17:40+10:00
+draft = false
 
-tags = []
-categories = ["Advanced"]
+tags = ["AWS Systems Manager", "Detective Controls"]
+categories = ["Beginner"]
 
 # Set the page as a chapter, changing the way it's displayed
 chapter = false
 
 # provides a flexible way to handle order for your pages.
-weight = 1000
+weight = 7
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
 disableToc = "false"
@@ -28,9 +28,15 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-A powerful way to implement preventative controls is to embed them into code pipelines. 
+Now that you have setup the patch baselines and the maintenance window there is one final task to configure Patch Manager to automatically apply patches as per your schedule. 
 
-In this lab we demonstrate a code pipeline which takes an AWS CloudFormation template and runs checks against it, if it passes the template is then deployed into a testing environment where additional checks are run, and finally if the template meets requirements it can be deployed into the production environment. 
+Configure Patch Manager to apply patched to both of your patch groups during the maintenance window you set up in the previous task.
 
-#### Contents
-{{% children %}}
+From the Patch Manager console choose Configure patching. 
+
+![ssm-patch-manager](ssm-patch-manager.png)
+
+Complete the Patch manager configuration by selecting the two patch groups, the maintenance schedule you created earlier, and selecting **Scan and install**, then click **Configure patching**.
+
+![ssm-configure-patching](ssm-configure-patching.png)
+

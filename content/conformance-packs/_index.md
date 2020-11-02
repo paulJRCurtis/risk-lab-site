@@ -1,7 +1,7 @@
 +++
 title = "Corrective controls with Conformance Packs"
 date = 2020-08-07T09:37:25+10:00
-draft = false
+draft = true
 
 tags = ["AWS Config"]
 categories = ["Intermediate"]

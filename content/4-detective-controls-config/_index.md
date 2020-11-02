@@ -28,7 +28,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-In this lab we will use three AWS Config rules to demonstrate how to check the configuration of an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket. 
+In this lab we will use three AWS Config and AWS Config Rules to demonstrate how to automate checks of [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket configuration. 
 
 [AWS Config](https://aws.amazon.com/config/) is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.  
 

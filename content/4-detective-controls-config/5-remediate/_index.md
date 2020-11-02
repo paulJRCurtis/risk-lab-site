@@ -25,29 +25,54 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-In this step we will remediate the noncompliant Managed Config Rule S3-bucket-server-side-encryption-enabled. For the purposes of this lab we will remediate the S3 Bucket manually from the AWS Console but in a real production environment you would want to have a remediation script and possibly take advantage of one of the options to automate it's application.
+Now you can take this from purely detective to a corrective controls by adding automated remediation to the 
+s3-bucket-server-side-encryption-enabled config rule you set-up.
 
-#### 1. The S3 Console ####
-First navigate to the S3 Console. To do select Services on the menu bar at the top of the page and select S3. You can can find S3 by either using the search or selecting it from under **Storage**.
-![Config Noncompliant Rule](console-s3.png)
-You will be taken to the S3 Console.
-![Config Noncompliant Rule](s3-console.png)
-On the S3 Console you will see the S3 Bucket listed, click on the bucket name.
-#### 2. Update the Bucket configuration ####
-You are now on the page for the S3 Bucket from here you can see tabs to configure various elements of the bucket.  
+This means that AWS Config will be setup to automatically apply server side encryption to any bucket in the account found that doesn't have it turned.  This moves this particular detective controls, to an automated corrective controls. 
 
-The **Overview** tabs shows the folders and files contained in the bucket.
-![Config Noncompliant Rule](s3-bucket.png)
-Select the **Properties** tab.
+In a production environment you want to carefully choose the actions you automate and the resources that these actions apply to but automation is a powerful way to move to a more proactive risk and controls management stance.
+
+#### 1. Find the AutomationAssumeRole
+To turn on the auto remediation action you will need to provide some parameters, one of these is the;
+- **AutoAssumeRole** This is the role (and associated permissions) that allows the auto remediation to happen. We will ue the AutoAssumeRole ARN or [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html). The ARN is used to uniquely identify the role.
+
+To find the AutomationAssumeRole you need to go to the **Roles** screen in IAM. From this screen you will see a list of existing roles and up the top you should see AutomationServiceRole. 
+
+![AutomationServiceRole](clue2-roles.png)
+
+Click on the name of the role to see a summary of the role.
+At the top of this screen you will see **Role ARN**. Copy the ARN (you can do so easily by clicking the copy 
+icon to the right). This is the string you will need to paste into the AutomatedAssumeRole back in Config.
+
+![AutomationServiceRole](clue2-role-summary.png)
+
+#### 2. Select the s3-bucket-server-side-encryption-enabled rule
+Now that you have the ARN it's time to head back to AWS Config.  From the AWS Config Console select **Rules** on the navigation menu on the left. 
+
+![AutomationServiceRole](clue3-config-rules.png)
 
 
-![Config Noncompliant Rule](s3-encryption.png)
-One of the properties you can control from this screen is the default encryption used for the bucket. There are three options; none, AES-256 and AWS-KMS. 
+From here you will see the three rules you implemented, and that the **Remediation action** for each is "Not set". Click on s3-bucket-server-side-encryption-enabled.
 
-Select AES-256 encryption and click {{< tile white cornflowerblue Save >}}.  You will be returned to the **Properties** tab where you can see the Default encryption is now set to AES-256.
+#### 3. Configure Auto remediation
+From the rules page, click on the Actions button at the top right.
 
-![Config Noncompliant Rule](s3-encryption-confirm.png)
+![AutomationServiceRole](clue3-bucket-encryption.png)
 
+Complete the form as per below.
+
+The **Resource ID Parameter** must be set to BucketName. This tells Config that the Bucket Name will be variable.
+
+The three main parameters are;
+- **AutoAssumeRole** This is the role (and associated permissions) that you copies in step 1. This allows the auto remediation to happen, an [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) (ARN) is used to uniquely identify the role.
+- **BucketName** The name of the bucket to apply the auto remediation to. You will should see this is greyed out because you selected BucketName as the **Resource ID Parameter**.  You do not want to specify a particular bucket because we want the remediation to be applied to all buckets.
+- **SSEAlgorthum** The encryption algorithm, this must be set to AES256.
+
+![AutomationServiceRole](clue3-config-edit-remediation.png)
+
+Click {{<tile white "#FF9900" "Save changes">}}
+
+You will then be taken back to the Rules page where you will see the **Remediation action** has been set but the Rule is still showing noncompliant resource(s).  It will take around 5-10 minutes for the remediation actions to run and for the config status to be refreshed. Take a bit of a break and then refresh the screen or move on to another challenge and come back and check.
 
 
 {{% notice note %}}
