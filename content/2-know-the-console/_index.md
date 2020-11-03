@@ -44,10 +44,10 @@ Along the top menubar you will see a few important elements we will use often.
 Clicking on the AWS logo will bring you back to this console screen.
 
 #### Services Dropdown ####  
-Choose Services to open a full list of services. On the upper right of the page, choose Group to see the
+Choose **Services** to open a full list of services. On the upper right of the page, choose Group to see the
 services listed by category or choose A–Z to see an alphabetical listing. Then choose the service that
-you want.  
-
+you want.  Clicking **Services** again will close the list. 
+<!-- 
 #### Resource Groups Dropdown ####  
 The AWS Management Console includes the Resource Groups menu, a feature for managing AWS
 resources such as an Amazon EC2 instance or an Amazon S3 bucket as a group. You can also use the
@@ -62,7 +62,7 @@ You can add and delete shortcuts for the services that you use most.
 
 To add a shortcut choose the pushpin icon and drag a service from the menu to the navigation bar. You can add more shortcuts and drop them onto the navigation bar in any order that you want. 
 
-To remove a shortcut  choose the pushpin icon and drag the shortcut off the navigation bar
+To remove a shortcut  choose the pushpin icon and drag the shortcut off the navigation bar -->
 
 #### Alert ####  
 Clicking on alerts will display a dropdown showing Open issues, scheduled changes and Other notifications, as well as the option to show all alerts.
@@ -78,18 +78,15 @@ The final option is to Sign Out.
 ![AWS Management Console](accountID.png?classes=shadow)
 
 #### Region Dropdown ####  
-For many services, you can choose a Region that specifies where your resources are managed. You do not
+For many services, you can choose a Region that specifies where your resources are hosted. You do not
 choose a Region for the AWS Management Console or for some services, such as IAM.
 To choose a Region  
 1. In the AWS Management Console, choose a service to go to that service's console.
 2. On the navigation bar, choose the name of the currently displayed Region.
 When you choose a Region, that Region becomes the default in the console.
 
-{{% notice note %}}
-If you have created AWS resources, but you don’t see those resources in the console, the console
-might be displaying resources from a different Region. Some resources (such as EC2 instances)
-are created in a specific Region. To see them, use the Region selector to choose the Region in
-which the resources were created.  
+{{% notice warning %}}
+Your will only be able to complete this workshop in the Sydney (ap-southeast-2) Region.  
 {{% /notice %}}
 
 #### Support Dropdown ####  

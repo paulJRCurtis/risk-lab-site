@@ -25,13 +25,13 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-First we need to enable AWS Config and begin tracking of your resources.
+First, we need to enable AWS Config and begin tracking of your resources.
 
-#### 1. Login to your AWS Account ####
-If you haven't already logon to your AWS account.  If you don't yet have an account go to [Start the Workshop](/risk-lab-site/1-start-workshop/)
+#### 1. Login to your AWS Account
+If you haven't already logon to your AWS account, do so now.  If you don't yet have an account go to [Start the Workshop](/risk-lab-site/1-start-workshop/)
 
-#### 2. Access the AWS Config Console ####
-Select the Services dropdown on the menu bar at the top left. Select Config under **Management & Governance**.  
+#### 2. Access the AWS Config Console
+Select the Services dropdown on the menu bar at the top left. Select Config under **Management & Governance**, or search for Config using **Find Services**.  
 
 **If this is your first time using AWS Config**  
 Select {{<tile "white" "cornflowerblue" "Get started">}} from the AWS Config intro screen.
@@ -41,13 +41,13 @@ Select {{<tile "white" "cornflowerblue" "Get started">}} from the AWS Config int
 **If you’ve already used AWS Config**  
 You will start at the AWS Config Dashboard, select Settings on the menu to the left.
 
-#### 3. Select resources to track ####  
-On the Settings page, under **Resource types to record**, select Record all resources supported in this region checkbox and check the checkbox for Include global resources.
+#### 3. Select resource types to record  
+On the Settings page, under **Resource types to record**, ensure  Record all resources supported in this region checkbox is selected and you may also check the checkbox for Include global resources, but it's not required for this workshop.
 ![AWS Config Settings](config-settings.png?classes=shadow)
 
 Checking these two boxes means that AWS Config will record configuration changes for all supported resources all resources as well as configuration changes for AWS Identity and Access Management (IAM) resources which are global resources. Global resources are not tied to an individual region and can be used in all regions. 
 
-#### 4. Create a Bucket for configuration history ####
+#### 4. Create Amazon S3 bucket for configuration history
 AWS Config needs a place to store configuration history and configuration snapshot files, we will use [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) to provide this storage space - what AWS calls an S3 Bucket.   
 Under **Amazon S3 bucket**, select Create a bucket to have the Amazon S3 bucket created automatically.  
 
@@ -55,14 +55,14 @@ Under **Amazon S3 bucket**, select Create a bucket to have the Amazon S3 bucket 
 This S3 bucket will be used to store the history used by Config, but to keep things simple and remove the need to create a second Bucket, we will be applying the Config Rules to this same S3 Bucket.
 {{% /notice %}}
 
-#### 5. Optional - Set-up notifications ####
+<!-- #### 5. Optional - Set-up notifications (SNS topic)
 You can leave the settings under **Amazon SNS topic** as is, or as an extra activity later you can check the box for Stream configuration changes and notifications to an Amazon SNS topic, and then select Create a topic, and give the SNS Topic a name, something like ```AWS-Config-Alerts```, or whatever you like.  
 
 ![AWS Config SNS](config-SNS.png?classes=shadow)
 
-This will enable AWS Config to send us configuration changes and notifications via [Amazon Simple Notification Service (SNS)](https://aws.amazon.com/sns/). We will configure this later in an optional step.
+This will enable AWS Config to send us configuration changes and notifications via [Amazon Simple Notification Service (SNS)](https://aws.amazon.com/sns/). We will configure this later in an optional step. -->
 
-#### 6. Check AWS Config access ####
+#### 5. AWS Config role
 There is no need to change any settings in this section, Create AWS Config service-linked role should already be selected.
 
 {{% notice note %}}

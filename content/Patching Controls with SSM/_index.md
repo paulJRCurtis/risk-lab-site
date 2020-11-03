@@ -28,13 +28,13 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Many organizations struggle to keep up with patching requirements. Sometimes one of the challenges is even to know what infrastructure you have. A definitive inventory of the operating systems and software running in the environment is not always easy to come by.
+Many organizations struggle to keep up with patching requirements. Sometimes one of the challenges is to get a definitive inventory of the operating systems and software running in the environment.
 
-In a cloud environment there are two different approaches
+In this workshop we will explore using AWS Systems Manager to gain visibility of the environment and to automate patching controls.
+
+In a cloud environment there are two different approaches to patching
 based on whether the architecture includes instances that are immutable or 
-non-immutable. 
-
-This might seem a confusing statement, but lets break it down. First, instances are the equivalent of servers in cloud speak. An immutable instance is one that is never changed or updated, it just gets 
+non-immutable. This might seem a confusing statement, but lets break it down. First, instances are the equivalent of servers in cloud speak. An immutable instance is one that is never changed or updated, it just gets 
 replaced. When an patch exists for an immutable instance the image, or [Amazon Machine Image](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html) (AMI), 
 used to create the instance is update. The instances can be then be replaced with instance 
 created from the new AMI. 
@@ -43,7 +43,7 @@ Immutable infrastructure has some big benefits including greater infrastructure 
 predictable deployment process, and the ability to easily scaled up and down 
 to meet capacity requirements. 
 
-You also know that this immutable approach cannot be applied to every instance
+This immutable approach cannot be applied to every instance
 as some applications don't allow for it. You need to identify these non-immutable 
 instances that do not meet patch baselines. [AWS Systems Manager](https://aws.amazon.com/systems-manager/) - Patch Manager provides the capability to do this, not only for AWS instances but for your
 on-premises instances too.
@@ -51,5 +51,5 @@ on-premises instances too.
 For more information see our resources on [Automated patching for non-immutable instances 
 in the hybrid cloud using AWS Systems Manager](https://docs.aws.amazon.com/prescriptive-guidance/latest/patch-management-hybrid-cloud/welcome.html)
 
-In this Lab you will get a clear view of the operating systems running in the environment, 
-identify those that require patching, and then set up a corrective controls which will patch the selected instances.
+In this workshop you will get a clear view of the operating systems and software running in the environment, 
+identify patching requirements, and set up a corrective controls which will patch the selected instances.

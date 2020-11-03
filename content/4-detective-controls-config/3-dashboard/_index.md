@@ -25,22 +25,26 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-#### 1. Explore the Dashboard ####
+Return to the Config Console.
+
+#### 1. Explore the Dashboard
 Take a few minutes to explore the information on the Dashboard.  
 
-On the right, in the **Compliance status** window you can see that there are a total of 3 rules - 1 Noncompliant and 2 Compliant, you can also see that there is 1 resource which is noncompliant.
+On the right, in the **Compliance status** window you can see that there are a total of 3 rules - 1 Noncompliant and 2 Compliant, you can also see that there are 2 resource which are noncompliant.
 
-The **Noncompliant rules by noncompliant resource count** lists noncompliant rules listed by the number of non-compliant resources.  In this case there is only one noncompliant rule and a single resource.
+The **Noncompliant rules by noncompliant resource count** lists noncompliant rules listed by the number of non-compliant resources.  In this case there is only one noncompliant rule and two noncompliant resources.
 
-To the left is the Resource Inventory, this lists the resources in the account.  In this case the total shown is 32 resources.  Note that there is only 1 S3 Bucket and our three rules all relate to S3 Buckets so only a singe resource is counted in our compliance status.
+To the left is the Resource Inventory, this lists the resources in the account. the number you see may differ from the image shown, it al depends upon what is deployed into the account.
 
 ![Config Dashboard](config-dashboard.png)
 
-#### 2. Review noncompliant rule(s) ####
-In the **Noncompliant rules by noncompliant resource count** window select S3-bucket-server-side-encryption-enabled. This will take you to a screen displaying the rule details and the **Resources in scope**.
+#### 2. Review noncompliant rule(s)
+In the **Noncompliant rules** window select S3-bucket-server-side-encryption-enabled. This will take you to a screen displaying the rule details and the **Resources in scope**.
+
+You will see that we have created some example S3 buckets for business units of AnyCompany.
 
 ![Config Noncompliant Rule](config-noncompliant-rule.png)
 
-#### 3. Drill into noncompliant resource ####
-Click on the bucket name under **Resources in scope** to display the details of the noncompliant bucket.
+#### 3. Drill into noncompliant resources
+Click on one of the bucket names to display the details of the noncompliant bucket.
 ![Config Noncompliant Resource](config-noncompliant-resource.png)

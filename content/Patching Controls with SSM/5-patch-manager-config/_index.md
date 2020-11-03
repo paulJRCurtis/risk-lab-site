@@ -3,9 +3,6 @@ title = "Create Patch Manager configuration"
 date = 2020-08-23T15:17:40+10:00
 draft = false
 
-tags = ["AWS Systems Manager", "Detective Controls"]
-categories = ["Beginner"]
-
 # Set the page as a chapter, changing the way it's displayed
 chapter = false
 
@@ -32,9 +29,9 @@ Now that you have setup the patch baselines and the maintenance window there is 
 
 Configure Patch Manager to apply patched to both of your patch groups during the maintenance window you set up in the previous task.
 
-From the Patch Manager console choose Configure patching. 
+From the Patch Manager console select {{<tile black white "Configure patching">}}
 
-![ssm-patch-manager](ssm-patch-manager.png)
+![ssm-patch-manager](ssm-patch-baselines.png)
 
 Complete the Patch manager configuration by selecting the two patch groups, the maintenance schedule you created earlier, and selecting **Scan and install**, then click **Configure patching**.
 

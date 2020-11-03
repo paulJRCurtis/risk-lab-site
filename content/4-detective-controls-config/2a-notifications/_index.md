@@ -7,14 +7,14 @@ draft = true
 chapter = false
 
 # provides a flexible way to handle order for your pages.
-weight = 150
+weight = 250
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
 disableToc = "false"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 menuTitle = " - Notifications"
 # The title of the page in menu will be prefixed by this HTML content
-pre = "<b>1.1 Optional</b>"
+pre = "<b>2.1 Optional</b>"
 # The title of the page in menu will be postfixed by this HTML content
 post = ""
 # Hide a menu entry by setting this to true
@@ -43,7 +43,7 @@ From the SNS Console click on **Topics** on the dashboard or on the menu on the 
 
 ![SNS Topics](sns-topics.png?classes=shadow)
 
-Click on the topic name, which wil be AWS-Config-Alerts if you used the suggested name. This will take you to the page detailing the Topic and any subscriptions.
+Click on the topic name, which will be AWS-Config-Alerts if you used the suggested name. This will take you to the page detailing the Topic and any subscriptions.
 
 #### 3. Create a Subscription ####
 ![SNS Topics](sns-config-alerts.png?classes=shadow)
@@ -58,7 +58,8 @@ Go to your email, and you should receive an email similar to the below, click Co
 ![SNS Topics](sns-email.png?width=300px&classes=shadow)
 
 {{% notice note %}}
-Throughout the rest of this lab keep an eye on your email to see the notifications come through.
+Throughout the rest of this lab keep an eye on your email to see the notifications come through.  
+In a production environment you would not use this type of notification, but you may do something similar to send data to a SOC or automation.
 {{% /notice %}}
 
 #### 5. Return to Config ####

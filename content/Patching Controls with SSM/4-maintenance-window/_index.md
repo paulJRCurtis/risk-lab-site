@@ -42,4 +42,4 @@ To set the Schedule uss the Cron schedule builder, but you can set schedule deta
 ![ssm-maintenance-window.png](ssm-maintenance-window.png)
 <img src="https://aws-jam-challenge-resources.s3.amazonaws.com/detective-control-patching/ssm-maintenance-window.png" alt="Compliance Dashboard" width="800">
 
-Once you satisfied with your maintenance window click Save changes.
+Once you satisfied with your maintenance window click {{<tile white "#FF9900" "Save changes">}}

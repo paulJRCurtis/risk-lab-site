@@ -35,16 +35,19 @@ This workshop creates an AWS account. You will need the **Participant Hash** pro
 Use Chrome or Firefox to ensure a good experience.
 {{% /notice %}}
 
+#### 1. Go to Event Engine
 Connect to the portal by clicking the button or browsing to https://dashboard.eventengine.run. The following screen will be displayed.
 
-![Event Engine](event-engine-initial-screen.png)
+![Event Engine](ee-initial-screen.png)
 
+#### 2. Enter Hash Code
 Enter the provided hash in the text box. The button on the bottom right corner changes to Accept Terms & Login. Click on that button to continue.
 
-![Event Engine Dashboard](event-engine-dashboard.png)
+![Event Engine Team Dashboard](ee-team-dashboard.png)
 
+#### 3. Open AWS Console
 Click on AWS Console on dashboard.
 
-![Event Engine Dashboard](event-engine-federated-login.png)
+![Event Engine Console Login](ee-console-login.png)
 
-Take the defaults and click on Open AWS Console. This will open AWS Console in a new browser tab.
+Take the defaults and click on Open AWS Console. This will open AWS Console in a new browser tab. You will not need the **Credentials / CLI Snippets** for this workshop.

@@ -1,7 +1,7 @@
 +++
 title = "Rule Scope"
 date = 2020-08-07T09:39:18+10:00
-draft = true
+draft = false
 
 # Set the page as a chapter, changing the way it's displayed
 chapter = false
@@ -40,7 +40,7 @@ The rules can be applied based on;
 - **Tags** - When any resource with the specified tag is created, changed, or deleted. A tag is a simple label consisting of a customer-defined key and an optional value that can make it easier to manage, search for, and filter resources. Tags are an important part of effective operations and governance and can be used in many ways including for the classification of data. The [Tagging Best Practice Whitepaper](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) is a great resource to find out more.
 - **All changes** - When any resource recorded by AWS Config is created, changed, or deleted.
 
-To review these settings go to the Rules page by selecting Rules on the menu bar to the left and click on the s3-bucket-public-write-prohibited rule name.  This will take you to the rules page.
+To review these settings go to the Rules page by selecting Rules on the menu bar to the left and click on the **s3-bucket-public-write-prohibited** rule name.  This will take you to the rules page.
 
 ![Config Noncompliant Resource](config-s3-bucket-public-write-prohibited.png)
 

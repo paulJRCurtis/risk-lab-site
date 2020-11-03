@@ -25,25 +25,28 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-#### 1. Return to Config ####
-Select Services on the menu bar at the top of the page and select Config. You can can find Config by either using the search or selecting it from under Management & Governance.
-![Config Noncompliant Resource](console-config.png)
+#### 1. Return to Config
+Select **Resources** in the navigation pane and type "Bucket" in to the **Resource type** drop down - make sure you select the tick-box and Click Look up.
+![Config Resource Inventory Filter](config-resource-inventory-filter.png)
 
-#### 2. Access Resource timelines ####
-From the Resource screen click the {{< tile black white "Resource Timeline" "fas fa-external-link-alt">}} in the top right.
+#### 2. Select a bucket
+Click on the bucket name that starts with "config-bucket"  
+![Config Resource Inventory](config-resource-inventory.png)
+
+#### 2. Access Resource timelines
+From the Resource screen click the {{< tile black white "Configuration Timeline" "fas fa-external-link-alt">}} in the top right.
 ![Config Noncompliant Resource](config-resource.png)
 
-#### 3. Review Resource configuration timeline ####
+#### 3. Review Resource configuration timeline
 You should now see the Configuration timeline tab of the timeline page for the resource. 
-
 
 ![Config Noncompliant Resource](config-configuration-timeline.png)
 
-On this tab we can see two entries on the timeline.  The first @ 1:10:43 PM is the Resource discovery time and has two Events. Click on the Events hyperlink for this first entry on the timeline or scroll down the page.
+On this tab we can see two entries on the timeline.  The first is the Resource discovery time and has two Events. Click on the Events hyperlink for this first entry on the timeline or scroll down the page.
 
 ![Config Noncompliant Resource](config-configuration-events.png)
 
-This shows that the S3 bucket was created as was a PutBucketPolicy at 1:10:11 PM and provides a link to [AWS CloudTrail](https://aws.amazon.com/cloudtrail/). CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. 
+This shows the S3 bucket creation link to [AWS CloudTrail](https://aws.amazon.com/cloudtrail/). CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. 
 
 Return now to the timeline a select the second entry on the timeline @ 5:17:37 PM and scroll down the page. You can see that this entry on the timeline logs the application of encryption we did during the remediation step.
 
@@ -52,3 +55,8 @@ Return now to the timeline a select the second entry on the timeline @ 5:17:37 P
 #### 4. Review Resource configuration timeline ####
 Select the **Compliance timeline** tab and take a few minutes to explore the compliance timeline.  This timeline logs the same events and changes but provides a compliance view of the resource.
 ![Config Noncompliant Resource](config-compliance-timeline.png)
+
+{{% notice note %}}
+You should now see that the auto remediation that you setup has run and that the bucket is compliant.  
+You have successfully completed this workshop, and if you have time you can move on to the next one.
+{{% /notice %}}

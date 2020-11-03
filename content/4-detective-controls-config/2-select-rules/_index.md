@@ -26,17 +26,17 @@ LastModifierEmail = ""
 +++
 
 #### 1. Select Config Rules ####
-At the time this lab was being created there were 150 [AWS Managed Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) to choose from, and the number is growing.
-
-In this introductory lab we will use three AWS Managed Config Rules that relate to S3. Recall that we created an S3 bucket already as part of the AWS Config setup to provide config a place to store configuration history and configuration snapshots.
+In this introductory workshop we will use three of the AWS Managed Config Rules that relate to S3. 
 
 The rules we will use are;
 - [s3-bucket-server-side-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-server-side-encryption-enabled.html)
 - [s3-bucket-public-write-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html)
 - [s3-bucket-public-read-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited.html)
 
+The easiest way to find these rules is to enter ````s3-bucket```` into the filter field.
+
 ![Config select rules](config-select-rules.png?classes=shadow)
-Enter s3-bucket into the search bar and select the three rules listed above and click {{<tile white cornflowerblue Next>}}
+Select the three rules listed above and click {{<tile white cornflowerblue Next>}}
 
 #### 2. Review Config Rules ####
 ![Config review rules](config-review-rules.png?classes=shadow)

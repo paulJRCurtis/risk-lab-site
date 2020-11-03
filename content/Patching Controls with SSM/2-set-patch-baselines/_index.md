@@ -44,17 +44,16 @@ Remember the following terms;
 - **Patch baseline** - the patches that are to be applied to an operating system to keep it up to date.
 - **Patch group** - the set of instances that patched will be applied to.
 
-Your task is to tell Patch Manager which patch baseline to use for your two patching groups. 
+Your task is to tell Patch Manager which patch baseline to use for your two patching groups. The patch baselines we will use are the default baselines for the **Amazon Linux 2** and **Windows** operating systems (note the difference between Linux and Linux 2). We will modify patch groups to be associated with the patch groups  ```jam-linux-app-patch-group``` and ```jam-windows-app-patch-group```.
 
-The patch baselines we will use are the default baselines for the **Amazon Linux 2** and **Windows** operating systems. We will **Modify patch groups** (the bold is a Hint) to be associated with the patch groups  ```jam-linux-app-patch-group``` and ```jam-windows-app-patch-group```.
-
+#### 1. Open Patch Manager - Patch Baselines
 To set a patch baseline open the AWS Systems Manager console and in the navigation pane, choose Patch Manager. 
 
 If the AWS Patch Manager home page opens first, click **View predefined patch baselines**, this lists AWS managed patching baselines.
 
 ![ssm-patch-manager.png](ssm-patch-manager.png)
 
-Otherwise you will be taken directly to the **Patch baselines** screen. This screen lists the patch baselines for each of the supported operating systems. For some operating systems you may more than one entry - but there will only be one default.
+Otherwise you will be taken directly to the **Patch baselines** screen. This screen lists the patch baselines for each of the supported operating systems. For some operating systems you may more than one entry - but there will only be one marked as default.
 
 ![ssm-patch-baselines.png](ssm-patch-baselines.png)
 
@@ -66,5 +65,4 @@ From here add the Patch group ```jam-windows-app-patch-group```.
 
 ![ssm-mod-patch-group.png(ssm-mod-patch-group.png](ssm-mod-patch-group.png)
 
-You will need to repeat this process for the ```jam-linux-app-patch-group```.
-
+You will need to repeat this process for the ```jam-linux-app-patch-group``` - Amazon Linux 2.

@@ -28,9 +28,11 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-In this lab we will use three AWS Config and AWS Config Rules to demonstrate how to automate checks of [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket configuration. 
+In this workshop we will use three AWS Config and AWS Config Rules to demonstrate how to automate controls, in this case, the controls will check the configuration of an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket. The same approach can be applied to many AWS services.
 
 [AWS Config](https://aws.amazon.com/config/) is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.  
+
+At the time this workshop was being created there were 150 [AWS Managed Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) to choose from, and the number is growing.
 
 With Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines. This enables you to simplify compliance auditing, security analysis, change management, and operational troubleshooting.
 

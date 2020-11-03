@@ -28,10 +28,13 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Use AWS Systems Manager - **Inventory** to determine the operating systems 
+In this step we will use AWS Systems Manager - **Inventory** to determine the operating systems 
 versions how many instances are running each operating systems.
 
-To set a patch baseline open the AWS Systems Manager console.  In the navigation pane, choose **Inventory**.
+#### 1. Go to AWS Systems Manager - Inventory
+Select Systems Manager from the AWS Console.
+
+In the navigation pane, choose **Inventory**.
 
 If you can only see the AWS Systems Manager home page, you may need to click on the menu icon (&#9776;) in the top left to open the navigation pane, and then choose **Inventory**.
 
@@ -41,10 +44,11 @@ You will see something similar to the below.
 
 ![ssm-inventory2](ssm-inventory2.png)
 
+#### 2. Ensure Inventory is enabled
 You may see that not all of the instances in the environment have inventory enabled. 
 
 ![ssm-inventory1](ssm-inventory1.png)
 
-If this is the case enable the inventory and wait for this process to complete.  You may need to refresh the screen a few times.
+If this is the case enable the inventory and wait for this process to complete.  You may need to wait for a few minutes while the inventory is completed. Reload the page after a few minutes to check progress.
 
 If you scroll down the inventory page you will see summaries of the operating system versions and other software running on the instances.

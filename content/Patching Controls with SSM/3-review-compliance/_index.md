@@ -28,15 +28,24 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-
-
-
 Now that you have set the patching baseline for your two patch groups (```jam-windows-app-patch-group``` and ```jam-linux-app-patch-group```) you have something to compare against. You now need to determine the effectiveness of the current manual patching controls. To do this you will identify the number of non-compliant resources.
 
-Use AWS Systems Manager - **Compliance** to determine the total number of non-compliant resource. 
+#### 1. Run Patch Manager Scan
+From Patch Manager select Patch Now
 
+![ssm-patch-manager.png](ssm-patch-manager.png)
+
+Click {{<tile white "#FF9900" "Patch now">}}
+
+#### 2. Scan Instances
+Run Patch Manager to Scan only.  
+![ssm-patch-manager.png](ssm-scan.png)
+
+You will see the progress tracked on screen, wait for a couple on minutes for the scan to complete.
+
+#### 2. Review Compliance
+Use AWS Systems Manager - **Compliance** to view the compliant and non-compliant resource. 
 
 Go to the Compliance screen in Systems Manager, you will see a screen similar to the below. However the number of compliant and non-compliant instances my vary.
 
 ![ssm-compliance.png](ssm-compliance.png)
-
